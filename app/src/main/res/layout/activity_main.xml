@@ -11,59 +11,105 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/fruit"
-        android:contentDescription="@string/fruit_photo_description" />
+        android:contentDescription="@string/fruit_photo_description"
+        android:src="@drawable/fruit" />
+
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="42sp"
+        android:layout_below="@id/big_image"
+        android:layout_centerHorizontal="true"
         android:fontFamily="cursive"
         android:paddingBottom="12dp"
         android:paddingTop="24dp"
-        android:layout_below="@id/big_image"
-        android:layout_centerHorizontal="true"/>
+        android:text="@string/name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="42sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/position"
+        android:layout_alignEnd="@id/name"
         android:layout_below="@id/name"
-        android:layout_alignRight="@id/name"
-        />
+        android:text="@string/position" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
         android:orientation="vertical">
 
 
-
-
-        <TextView
+        <ImageView
+            android:id="@+id/work_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="C.K. Norwida 14" />
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/address_icon_description"
+            android:src="@drawable/ic_work" />
 
         <TextView
+            android:id="@+id/work"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="78-400 Szczecinek" />
+            android:layout_toEndOf="@id/work_icon"
+            android:lineSpacingMultiplier="1.5"
+            android:text="@string/address" />
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/work"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/phone_icon_description"
+            android:src="@drawable/ic_phone" />
 
         <TextView
+            android:id="@+id/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@id/work"
+            android:layout_alignTop="@id/phone_icon"
             android:autoLink="phone"
-            android:text="+48 101 101 101" />
+            android:text="@string/phone_number" />
+
+        <ImageView
+            android:id="@+id/email_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/e_mail_icon_description"
+            android:src="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/work"
+            android:layout_alignTop="@id/email_icon"
+            android:autoLink="email"
+            android:text="@string/email" />
+
+        <ImageView
+            android:id="@+id/clock_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_address"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/clock_icon_description"
+            android:src="@drawable/ic_clock" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autoLink="email"
-            android:text="email@gmail.com" />
-    </LinearLayout>
+            android:layout_alignStart="@id/work"
+            android:layout_alignTop="@id/clock_icon"
+            android:text="@string/opening_hours" />
+    </RelativeLayout>
 </RelativeLayout>

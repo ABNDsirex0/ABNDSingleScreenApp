@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fruit_photo_description">zdjęcie owoców</string>
+    <string name="position">Dietetyk</string>
+    <string name="address_icon_description">ikona adresu</string>
+    <string name="phone_icon_description">ikona telefonu</string>
+    <string name="e_mail_icon_description">ikona e-mail</string>
+    <string name="clock_icon_description">ikona zegara</string>
+    <string name="opening_hours">16:00 - 18:00</string>
+</resources>

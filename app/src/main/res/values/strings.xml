@@ -1,6 +1,14 @@
 <resources>
-    <string name="app_name">Magnamed</string>
-    <string name="fruit_photo_description">fruit photo</string>
-    <string name="name">Agnieszka Kin</string>
+    <string name="app_name" translatable="false">Magnamed</string>
+    <string name="fruit_photo_description">photo of fruit</string>
+    <string name="name" translatable="false">Agnieszka Kin</string>
     <string name="position">Dietician</string>
+    <string name="address_icon_description">address icon</string>
+    <string name="address" translatable="false">C.K. Norwida 14\n78-400 Szczecinek</string>
+    <string name="phone_icon_description">phone icon</string>
+    <string name="phone_number" translatable="false">+48 101 101 101</string>
+    <string name="e_mail_icon_description">e-mail icon</string>
+    <string name="clock_icon_description">clock icon</string>
+    <string name="email" translatable="false">email@gmail.com</string>
+    <string name="opening_hours">4pm - 6pm</string>
 </resources>
