@@ -11,12 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/fruit" />
+        android:src="@drawable/fruit"
+        android:contentDescription="@string/fruit_photo_description" />
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agnieszka Kin"
+        android:text="@string/name"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="42sp"
         android:fontFamily="cursive"
@@ -27,10 +28,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dietician"
+        android:text="@string/position"
         android:layout_below="@id/name"
         android:layout_alignRight="@id/name"
-        android:paddingLeft="16dp"
         />
 
     <LinearLayout
